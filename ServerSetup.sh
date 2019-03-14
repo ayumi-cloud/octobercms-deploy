@@ -4,7 +4,7 @@ apt update
 
 # Install dependencies
 apt install -y php7.3 php7.3-fml
-apt install -y php7.3-mbstring php7.3-xml php7.3-zip
+apt install -y php-mbstring php-xml php-zip php-mysql
 apt install -y nginx software-properties-common python-software-properties python-pip
 
 # Get basic details of the running instance
