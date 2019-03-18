@@ -9,7 +9,7 @@ apt update
 apt install -y php7.3
 apt install -y php7.3-fpm
 apt install -y php-mbstring php-xml php-zip php-mysql php-gd php-xml php-curl
-apt install -y nginx software-properties-common python-software-properties python-pip
+apt install -y nginx software-properties-common python-pip
 
 # Get basic details of the running instance
 EC2_INSTANCE_ID="`wget -q -O - http://169.254.169.254/latest/meta-data/instance-id`"
