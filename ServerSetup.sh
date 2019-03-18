@@ -8,7 +8,7 @@ apt-add-repository ppa:ondrej/php
 apt update
 apt install -y php7.3
 apt install -y php7.3-fpm
-apt install -y php-mbstring php-xml php-zip php-mysql php-gd php-mcrypt php-xml php-mcrypt php-xmlrpc php-curl php-pdo php-mysqlnd php-gmp
+apt install -y php-mbstring php-xml php-zip php-mysql php-gd php-mcrypt php-xml php-curl php-pdo php-gmp
 apt install -y nginx software-properties-common python-software-properties python-pip
 
 # Get basic details of the running instance
