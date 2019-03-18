@@ -3,8 +3,9 @@
 apt update
 
 # Install dependencies
+apt install wget
 apt install -y php7.3 php7.3-fml
-apt install -y php-mbstring php-xml php-zip php-mysql
+apt install -y php-mbstring php-xml php-zip php-mysql php-gd php-mcrypt php-xml php-mcrypt php-xmlrpc php-curl php-pdo php-mysqlnd php-gmp
 apt install -y nginx software-properties-common python-software-properties python-pip
 
 # Get basic details of the running instance
@@ -18,8 +19,7 @@ php composer-setup.php -- --install-dir=/usr/bin --filename=composer
 rm composer-setup.php
 
 # Ruby for codedeploy agent
-apt install ruby -y
-apt install wget
+apt install -y ruby
 
 # Install AWS codedeploy agent
 wget https://aws-codedeploy-${EC2_REGION}.s3.amazonaws.com/latest/install
