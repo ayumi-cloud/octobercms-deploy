@@ -8,7 +8,7 @@ apt-add-repository ppa:ondrej/php
 apt update
 apt install -y php7.3
 apt install -y php7.3-fpm
-apt install -y php-mbstring php-xml php-zip php-mysql php-gd php-xml php-curl
+apt install -y php-cgi php-mbstring php-xml php-zip php-mysql php-gd php-xml php-curl
 apt install -y nginx software-properties-common python-pip
 apt install -y npm 
 
