@@ -1,12 +1,13 @@
 ## OctoberCMS deploy tips & tricks
 
-### 
+### Setup
 
 
+### How to deploy to AWS Instances with AWS Codedeploy
 
 
 ### Optimalizations
-Most of the bottlenecks of any php application are that people forgot to do:
+Most of the bottlenecks of OctoberCMS are that people forgot to do:
 
 - Optimalize composer autoloader `composer install --optimize-autoloader`
 - Run `php artisan config:cache` to cache config files
