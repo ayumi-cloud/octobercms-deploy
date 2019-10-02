@@ -10,7 +10,10 @@ apt install -y php7.3
 apt install -y php7.3-fpm
 apt install -y php-cgi php-mbstring php-xml php-zip php-mysql php-gd php-xml php-curl php-imap
 apt install -y nginx software-properties-common python-pip
-apt install -y npm 
+apt install -y npm
+
+# Queue worker
+apt install -y supervisor
 
 # Get basic details of the running instance
 EC2_INSTANCE_ID="`wget -q -O - http://169.254.169.254/latest/meta-data/instance-id`"
