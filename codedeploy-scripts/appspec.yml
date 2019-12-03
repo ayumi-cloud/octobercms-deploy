@@ -1,0 +1,30 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+permissions:
+  - object: /var/www/html
+    owner: www-data
+    mode: 755
+    type:
+      - file
+      - directory
+hooks:
+  BeforeInstall:
+    - location: scripts/beforeinstall.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/afterinstall.sh
+      timeout: 500
+      runas: root
+  ApplicationStart:
+    - location: scripts/applicationstart.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/applicationstop.sh
+      timeout: 300
+      runas: root
+
