@@ -6,7 +6,7 @@ server {
 	server_name _;
 
 	# index.php
-  index index.php;
+  	index index.php;
 
 	# enforce NO www
 	if ($host ~* ^www\.(.*))
@@ -21,7 +21,7 @@ server {
 	}
 
 	location ~ \.php$ {
-    try_files $uri =404;
+    		try_files $uri =404;
 		fastcgi_split_path_info ^(.+\.php)(/.+)$;
 		include fastcgi_params;
 		fastcgi_intercept_errors on;
